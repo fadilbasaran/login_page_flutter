@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:login_page/constants/app_constants.dart';
 import 'package:login_page/view/login/widgets/background.dart';
+import 'package:login_page/view/login/widgets/text_field_container.dart';
+import 'package:login_page/widgets/rounded_button.dart';
 import '../../../constants/path_constants.dart';
+import '../../../widgets/already_have_an_check_account.dart';
 import '../../../widgets/rounded_input_textfield.dart';
+import '../../../widgets/rounded_password_field.dart';
 
 class Body extends StatelessWidget {
   const Body({
@@ -26,6 +31,13 @@ class Body extends StatelessWidget {
           RoundedInputFileld(
             hintText: 'Your Email',
             onChanged: (value) {},
+          ),
+          RoundedPasswordField(
+            onChanged: (value) {},
+          ),
+          RoundedButton(text: 'LOGIN', press: () {}),
+          AlreadyHaveAnAccountCheck(
+            press: () {},
           )
         ],
       ),
